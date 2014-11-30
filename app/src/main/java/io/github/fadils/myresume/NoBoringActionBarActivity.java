@@ -68,12 +68,32 @@ public class NoBoringActionBarActivity extends Activity {
 
     private void setupListView() {
         ArrayList<String> FAKES = new ArrayList<String>();
-        for (int i = 0; i < 1000; i++) {
-            FAKES.add("entry " + i);
+        for (int i = 0; i < 6; i++) {
+            switch (i) {
+                case 0:
+                    FAKES.add("Fadil Sutomo");
+                    break;
+                case 1:
+                    FAKES.add("Passionate mobile developer");
+                    break;
+                case 2:
+                    FAKES.add("Carleton U, Canada (2008)");
+                    break;
+                case 3:
+                    FAKES.add("fsutomo@gmail.com");
+                    break;
+                case 4:
+                    FAKES.add("+6281284474864");
+                    break;
+                case 5:
+                    FAKES.add("Jakarta, Indonesia");
+                    break;
+
+            }
         }
         mPlaceHolderView = getLayoutInflater().inflate(R.layout.view_header_placeholder, mListView, false);
         mListView.addHeaderView(mPlaceHolderView);
-        mListView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, FAKES));
+        mListView.setAdapter(new ArrayAdapter<String>(this, R.layout.listview_item, FAKES));
         mListView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {

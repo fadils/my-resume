@@ -2,6 +2,8 @@
 <resources>
 
     <dimen name="header_height">250dp</dimen>
+    <dimen name="padding_left">25dp</dimen>
     <dimen name="header_logo_size">100dp</dimen>
+    <dimen name="row_height">80dp</dimen>
 
 </resources>

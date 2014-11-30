@@ -14,6 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.mikhaellopez.circularimageview.CircularImageView;
+
 import java.util.ArrayList;
 
 public class NoBoringActionBarActivity extends Activity {
@@ -25,7 +27,7 @@ public class NoBoringActionBarActivity extends Activity {
     private int mMinHeaderTranslation;
     private ListView mListView;
     private KenBurnsView mHeaderPicture;
-    private ImageView mHeaderLogo;
+    private CircularImageView mHeaderLogo;
     private View mHeader;
     private View mPlaceHolderView;
     private AccelerateDecelerateInterpolator mSmoothInterpolator;
@@ -52,7 +54,8 @@ public class NoBoringActionBarActivity extends Activity {
         mHeader = findViewById(R.id.header);
         mHeaderPicture = (KenBurnsView) findViewById(R.id.header_picture);
         mHeaderPicture.setResourceIds(R.drawable.picture0, R.drawable.picture1);
-        mHeaderLogo = (ImageView) findViewById(R.id.header_logo);
+        mHeaderLogo = (CircularImageView) findViewById(R.id.header_logo);
+        mHeaderLogo.setBorderWidth(0);
 
         mActionBarTitleColor = getResources().getColor(R.color.actionbar_title_color);
 

@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/picture0" />
 
-        <ImageView
+        <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/header_logo"
             android:layout_width="@dimen/header_logo_size"
             android:layout_height="@dimen/header_logo_size"

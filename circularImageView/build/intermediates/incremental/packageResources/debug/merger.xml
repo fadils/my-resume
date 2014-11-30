@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/src/main/res"><file path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="CircularImageView">
+        <attr format="boolean" name="border"/>
+        <attr format="dimension" name="border_width"/>
+        <attr format="color" name="border_color"/>
+        <attr format="boolean" name="shadow"/>
+    </declare-styleable><declare-styleable name="Theme">
+        <attr format="reference" name="circularImageViewStyle"/>
+    </declare-styleable></file></source><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/build/generated/res/rs/debug"/><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/build/generated/res/generated/debug"/></dataSet><dataSet config="debug"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CircularImageView"><attr format="boolean" name="border"/><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="shadow"/></declare-styleable><declare-styleable name="Theme"><attr format="reference" name="circularImageViewStyle"/></declare-styleable></configuration></mergedItems></merger>

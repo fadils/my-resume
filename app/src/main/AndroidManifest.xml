@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher" >
         <activity
-            android:name="io.github.fadils.myresume.NoBoringActionBarActivity"
+            android:name=".MyResumeActivity"
             android:label="@string/noboringactionbar_title"
             android:theme="@style/TransparentTheme">
         </activity>

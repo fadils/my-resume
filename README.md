@@ -1,7 +1,7 @@
 # My Resume App
 
-Your resume fancy resume in an app.
-Show people who you are and what you can do in a beatifully created digital resume.
+Your resume in an app.
+Show people who you are and what you can do in a beautifully created digital resume.
 
 # License
 

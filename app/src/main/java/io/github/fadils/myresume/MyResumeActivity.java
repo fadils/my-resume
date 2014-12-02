@@ -18,9 +18,9 @@ import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;
 
-public class NoBoringActionBarActivity extends Activity {
+public class MyResumeActivity extends Activity {
 
-    private static final String TAG = "NoBoringActionBarActivity";
+    private static final String TAG = "MyResumeActivity";
     private int mActionBarTitleColor;
     private int mActionBarHeight;
     private int mHeaderHeight;

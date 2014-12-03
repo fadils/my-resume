@@ -43,6 +43,15 @@
             "profilePic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
             "timeStamp": null,
             "url": null
+        },
+        {
+            "id": 4,
+            "name": "Contacts",
+            "image": "",
+            "status": "fsutomo@gmail.com \n+62812-844-74-864",
+            "profilePic": "http://www.theinquirer.net/IMG/853/275853/gmail-logo-2013.png",
+            "timeStamp": null,
+            "url": null
         }
     ]
 }

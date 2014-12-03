@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/MyResume/circularImageView/src/androidTest/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/my-resume/circularImageView/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/Users/fadilsutomo/HackRanch/AndroidProjects/my-resume/circularImageView/src/androidTest/assets"/></dataSet></merger>

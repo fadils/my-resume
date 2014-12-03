@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
 		// We first check for cached request
 		Cache cache = AppController.getInstance().getRequestQueue().getCache();
 		Entry entry = cache.get(URL_FEED);
-		if (entry != null) {
+		if (entry == null) {
 			// fetch the data from cache
 			try {
 				String data = new String(entry.data, "UTF-8");

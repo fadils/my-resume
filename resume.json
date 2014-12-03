@@ -2,29 +2,29 @@
     "feed": [
         {
             "id": 1,
-            "name": "Fadil Sutomo",
+            "name": "Summary of Qualifications",
             "image": "http://api.androidhive.info/feed/img/cosmos.jpg",
-            "status": "\"faldkfaldkfja lkadjflakdjfa nd emotional human endeavor,\" says Brannon Braga, executive producer and director. \"And Cosmos is all about making science an experience.\"",
+            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.",
             "profilePic": "http://api.androidhive.info/feed/img/nat.jpg",
-            "timeStamp": "1403375851930",
+            "timeStamp": "Passionate mobile engineer",
             "url": null
         },
         {
             "id": 2,
-            "name": "TIME",
+            "name": "Education",
             "image": "http://api.androidhive.info/feed/img/time_best.jpg",
-            "status": "30 years of Cirque du Soleil's best photos",
+            "status": "Carleton University, Canada. 2008",
             "profilePic": "http://api.androidhive.info/feed/img/time.png",
-            "timeStamp": "1403375851930",
+            "timeStamp": "Bachelor of Computer Science (Honours). Minor in Math",
             "url": "http://ti.me/1qW8MLB"
         },
         {
             "id": 5,
-            "name": "Abraham Lincoln",
+            "name": "Awards and Achievements",
             "image": null,
-            "status": "That some achieve great success, is proof to all that others can achieve it as well",
+            "status": "IBM Best Performer Award - 2009. \n Founder Institute Graduate",
             "profilePic": "http://api.androidhive.info/feed/img/lincoln.jpg",
-            "timeStamp": "1403375851930",
+            "timeStamp": "",
             "url": null
         },
         {

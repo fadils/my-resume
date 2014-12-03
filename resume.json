@@ -23,7 +23,7 @@
             "id": 5,
             "name": "Awards and Achievements",
             "image": null,
-            "status": "IBM Best Performer Award - 2009. \nFounder Institute Graduate - 2013",
+            "status": "IBM Best Performer Award - 2009 \nFounder Institute Graduate - 2013",
             "profilePic": "http://elishatan.com/wp-content/uploads/2011/01/fi-grad.png",
             "timeStamp": "Somethings I'm proud of",
             "url": null
@@ -41,14 +41,15 @@
                        \nIDE: Android Studio, Eclipse
                        \nMultiplatform: Phonegap, Trigger.io",
             "profilePic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
-            "timeStamp": "",
+            "timeStamp": "Quite comfortable with these",
             "url": null
         },
         {
             "id": 4,
             "name": "Contacts",
-            "image": "",
-            "status": "fsutomo@gmail.com \n+62812-844-74-864",
+            "image": "http://www.quickmeme.com/img/9c/9ce5a4414901fd5d01d0bce6fe700fc33755f96fa2cdecd4fe0934908234c85e.jpg",
+            "status": "fsutomo@gmail.com
+            +62812-844-74-864",
             "profilePic": "http://www.theinquirer.net/IMG/853/275853/gmail-logo-2013.png",
             "timeStamp": "Reach me!",
             "url": null

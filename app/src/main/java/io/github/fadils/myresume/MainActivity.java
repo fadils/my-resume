@@ -1,5 +1,6 @@
 package io.github.fadils.myresume;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.RectF;
@@ -10,23 +11,39 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AbsListView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.android.volley.Cache;
+import com.android.volley.Cache.Entry;
+import com.android.volley.Request.Method;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.List;
+
+import io.github.fadils.myresume.adapter.FeedListAdapter;
+import io.github.fadils.myresume.app.AppController;
+import io.github.fadils.myresume.data.FeedItem;
 
 public class MainActivity extends Activity {
-
-    private static final String TAG = "MainActivity";
+	private static final String TAG = MainActivity.class.getSimpleName();
     private int mActionBarTitleColor;
     private int mActionBarHeight;
     private int mHeaderHeight;
     private int mMinHeaderTranslation;
-    private ListView mListView;
+	private ListView mListView;
     private KenBurnsView mHeaderPicture;
+    //private ImageView mHeaderPicture;
     private CircularImageView mHeaderLogo;
     private View mHeader;
     private View mPlaceHolderView;
@@ -39,18 +56,22 @@ public class MainActivity extends Activity {
     private SpannableString mSpannableString;
 
     private TypedValue mTypedValue = new TypedValue();
+	private FeedListAdapter listAdapter;
+	private List<FeedItem> feedItems;
+    private String URL_FEED = "https://raw.githubusercontent.com/fadils/my-resume/master/resume.json";
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+	@SuppressLint("NewApi")
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 
         mSmoothInterpolator = new AccelerateDecelerateInterpolator();
         mHeaderHeight = getResources().getDimensionPixelSize(R.dimen.header_height);
         mMinHeaderTranslation = -mHeaderHeight + getActionBarHeight();
 
-        setContentView(R.layout.activity_noboringactionbar);
+		mListView = (ListView) findViewById(R.id.list);
 
-        mListView = (ListView) findViewById(R.id.listview);
         mHeader = findViewById(R.id.header);
         mHeaderPicture = (KenBurnsView) findViewById(R.id.header_picture);
         mHeaderPicture.setResourceIds(R.drawable.picture0, R.drawable.picture1);
@@ -59,41 +80,100 @@ public class MainActivity extends Activity {
 
         mActionBarTitleColor = getResources().getColor(R.color.actionbar_title_color);
 
-        mSpannableString = new SpannableString(getString(R.string.noboringactionbar_title));
+        mSpannableString = new SpannableString(getString(R.string.name));
         mAlphaForegroundColorSpan = new AlphaForegroundColorSpan(mActionBarTitleColor);
 
         setupActionBar();
         setupListView();
-    }
+
+		// We first check for cached request
+		Cache cache = AppController.getInstance().getRequestQueue().getCache();
+		Entry entry = cache.get(URL_FEED);
+		if (entry != null) {
+			// fetch the data from cache
+			try {
+				String data = new String(entry.data, "UTF-8");
+				try {
+					parseJsonFeed(new JSONObject(data));
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+			} catch (UnsupportedEncodingException e) {
+				e.printStackTrace();
+			}
+
+		} else {
+			// making fresh volley request and getting json
+			JsonObjectRequest jsonReq = new JsonObjectRequest(Method.GET,
+					URL_FEED, null, new Response.Listener<JSONObject>() {
+
+						@Override
+						public void onResponse(JSONObject response) {
+							VolleyLog.d(TAG, "Response: " + response.toString());
+							if (response != null) {
+								parseJsonFeed(response);
+							}
+						}
+					}, new Response.ErrorListener() {
+
+						@Override
+						public void onErrorResponse(VolleyError error) {
+							VolleyLog.d(TAG, "Error: " + error.getMessage());
+						}
+					});
+
+			// Adding request to volley request queue
+			AppController.getInstance().addToRequestQueue(jsonReq);
+		}
+
+	}
+
+	/**
+	 * Parsing json reponse and passing the data to feed view list adapter
+	 * */
+	private void parseJsonFeed(JSONObject response) {
+		try {
+			JSONArray feedArray = response.getJSONArray("feed");
+
+			for (int i = 0; i < feedArray.length(); i++) {
+				JSONObject feedObj = (JSONObject) feedArray.get(i);
+
+				FeedItem item = new FeedItem();
+				item.setId(feedObj.getInt("id"));
+				item.setName(feedObj.getString("name"));
+
+				// Image might be null sometimes
+				String image = feedObj.isNull("image") ? null : feedObj
+						.getString("image");
+				item.setImge(image);
+				item.setStatus(feedObj.getString("status"));
+				item.setProfilePic(feedObj.getString("profilePic"));
+				item.setTimeStamp(feedObj.getString("timeStamp"));
+
+				// url might be null sometimes
+				String feedUrl = feedObj.isNull("url") ? null : feedObj
+						.getString("url");
+				item.setUrl(feedUrl);
+
+				feedItems.add(item);
+			}
+
+			// notify data changes to list adapater
+			listAdapter.notifyDataSetChanged();
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
 
     private void setupListView() {
-        ArrayList<String> FAKES = new ArrayList<String>();
-        for (int i = 0; i < 6; i++) {
-            switch (i) {
-                case 0:
-                    FAKES.add("Fadil Sutomo");
-                    break;
-                case 1:
-                    FAKES.add("Passionate mobile developer");
-                    break;
-                case 2:
-                    FAKES.add("Carleton U, Canada (2008)");
-                    break;
-                case 3:
-                    FAKES.add("fsutomo@gmail.com");
-                    break;
-                case 4:
-                    FAKES.add("+6281284474864");
-                    break;
-                case 5:
-                    FAKES.add("Jakarta, Indonesia");
-                    break;
 
-            }
-        }
+        feedItems = new ArrayList<FeedItem>();
+
+        listAdapter = new FeedListAdapter(this, feedItems);
+
         mPlaceHolderView = getLayoutInflater().inflate(R.layout.view_header_placeholder, mListView, false);
         mListView.addHeaderView(mPlaceHolderView);
-        mListView.setAdapter(new ArrayAdapter<String>(this, R.layout.listview_item, FAKES));
+        mListView.setAdapter(listAdapter);
         mListView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -174,11 +254,6 @@ public class MainActivity extends Activity {
         return (ImageView) findViewById(android.R.id.home);
     }
 
-    /*private TextView getActionBarTitleView() {
-        int id = Resources.getSystem().getIdentifier("action_bar_title", "id", "android");
-        return (TextView) findViewById(id);
-    }*/
-
     public int getActionBarHeight() {
         if (mActionBarHeight != 0) {
             return mActionBarHeight;
@@ -187,4 +262,5 @@ public class MainActivity extends Activity {
         mActionBarHeight = TypedValue.complexToDimensionPixelSize(mTypedValue.data, getResources().getDisplayMetrics());
         return mActionBarHeight;
     }
+
 }

@@ -1,6 +1,7 @@
 # My Resume App
 
 Your resume in an app.
+A just-wear-it Android code for your digital resume.
 Show people who you are and what you can do in a beautifully created digital resume.
 
 # License
@@ -20,3 +21,10 @@ Show people who you are and what you can do in a beautifully created digital res
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+# Credits
+
+1. AndroidHive
+2. Flavien Laurent
+3. Cyril Mottier

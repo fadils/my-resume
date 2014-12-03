@@ -2,10 +2,7 @@
 <resources>
 
     <string name="app_name">Fadil\'s Resume</string>
-    <string name="noboringactionbar_title">My Resume</string>
+    <string name="action_settings">Settings</string>
     <string name="name">Fadil Sutomo</string>
-    <string name="description">Passionate mobile developer</string>
-    <string name="education">Carleton U, Canada (2008)</string>
-    <string name="email">fsutomo@gmail.com</string>
 
 </resources>

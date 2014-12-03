@@ -1,13 +1,33 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name" />
+        android:divider="@null" />
 
-</LinearLayout>
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height">
+
+        <io.github.fadils.myresume.KenBurnsView
+            android:id="@+id/header_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src= "@drawable/picture0" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/header_logo"
+            android:layout_width="@dimen/header_logo_size"
+            android:layout_height="@dimen/header_logo_size"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_header_logo" />
+
+    </FrameLayout>
+
+</FrameLayout>

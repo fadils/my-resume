@@ -31,7 +31,7 @@
         {
             "id": 3,
             "name": "Technical Proficiency",
-            "image": null,
+            "image": "",
             "status": "Programming Languages: Java, Android SDK, Ruby on Rails
                        \nCollaboration: Github, Pivotal Tracker, Agile/Scrum development
                        \nAPI consumption: REST, GCM, Parse.io, Google Maps, social networking, etc.

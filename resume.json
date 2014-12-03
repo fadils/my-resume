@@ -4,7 +4,8 @@
             "id": 1,
             "name": "Summary of Qualifications",
             "image": "",
-            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.",
+            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.
+            \nExceptional interpersonal skills, good team work and enthusiastic in working with other people. Business-oriented, self-starter, hard working and persistent in getting the job done. Strongly-driven to solve complex problems and gain new experiences.",
             "profilePic": "https://raw.githubusercontent.com/fadils/fadils.github.io/master/images/jekyll-logo.png",
             "timeStamp": "Passionate mobile engineer",
             "url": null
@@ -12,7 +13,7 @@
         {
             "id": 2,
             "name": "Education",
-            "image": "",
+            "image": "http://www.consullux.com/files/2013/09/Carleton-Univ-River-Building-01.jpg",
             "status": "Carleton University, Canada. 2008",
             "profilePic": "http://upload.wikimedia.org/wikipedia/en/thumb/5/57/Carleton_University_Logo.svg/175px-Carleton_University_Logo.svg.png",
             "timeStamp": "Bachelor of Computer Science (Honours). Minor in Math",
@@ -22,7 +23,7 @@
             "id": 5,
             "name": "Awards and Achievements",
             "image": null,
-            "status": "IBM Best Performer Award - 2009. \nFounder Institute Graduate",
+            "status": "IBM Best Performer Award - 2009. \nFounder Institute Graduate - 2013",
             "profilePic": "http://elishatan.com/wp-content/uploads/2011/01/fi-grad.png",
             "timeStamp": "",
             "url": null

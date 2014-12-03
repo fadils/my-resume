@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Summary of Qualifications",
-            "image": "http://api.androidhive.info/feed/img/cosmos.jpg",
+            "image": "summary.png",
             "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.",
             "profilePic": "",
             "timeStamp": "Passionate mobile engineer",
@@ -12,18 +12,18 @@
         {
             "id": 2,
             "name": "Education",
-            "image": "http://api.androidhive.info/feed/img/time_best.jpg",
+            "image": "",
             "status": "Carleton University, Canada. 2008",
-            "profilePic": "http://api.androidhive.info/feed/img/time.png",
+            "profilePic": "http://upload.wikimedia.org/wikipedia/en/thumb/5/57/Carleton_University_Logo.svg/175px-Carleton_University_Logo.svg.png",
             "timeStamp": "Bachelor of Computer Science (Honours). Minor in Math",
-            "url": "http://ti.me/1qW8MLB"
+            "url": ""
         },
         {
             "id": 5,
             "name": "Awards and Achievements",
             "image": null,
             "status": "IBM Best Performer Award - 2009. \nFounder Institute Graduate",
-            "profilePic": "",
+            "profilePic": "http://elishatan.com/wp-content/uploads/2011/01/fi-grad.png",
             "timeStamp": "",
             "url": null
         },
@@ -39,7 +39,7 @@
                        \nCloud Infrastructure: AWS, RackSpace
                        \nIDE: Android Studio, Eclipse
                        \nMultiplatform: Phonegap, Trigger.io",
-            "profilePic": "",
+            "profilePic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
             "timeStamp": null,
             "url": null
         }

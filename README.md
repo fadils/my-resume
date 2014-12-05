@@ -19,7 +19,7 @@ You just play along with `resume.json` and fill the content as you wish. It's pr
 
     Copyrighted 2014 Fadil Sutomo.
 
-    All components used belong to their respective copyright owners.
+    All used components belong to their respective copyright owners.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

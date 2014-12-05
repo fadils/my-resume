@@ -9,9 +9,11 @@ You just play along with `resume.json` and fill the content as you wish. It's pr
 
 # Screenshots
 
-![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic1.png "Screenshot 1")
-![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic2.png "Screenshot 2")
-![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic3.png "Screenshot 3")
+<span>
+    <img src="https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic1.png" alt="resume_pic1" style="width: 80px; height: 120px;"/>
+    <img src="https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic2.png" alt="resume_pic2" style="width: 80px; height: 120px;"/>
+    <img src="https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic3.png" alt="resume_pic3" style="width: 80px; height: 120px;"/>
+</span>
 
 # License
 

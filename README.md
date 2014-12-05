@@ -3,6 +3,10 @@
 Your resume in an app.
 Show people who you are and what you can do in a beautifully created digital resume.
 
+![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic1.png "Screenshot 1")
+![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic2.png "Screenshot 2")
+![alt text](https://raw.githubusercontent.com/fadils/files/master/pics/resume_pic3.png "Screenshot 3")
+
 # License
 
     Copyrighted 2014 Fadil Sutomo.

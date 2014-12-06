@@ -24,4 +24,5 @@ dependencies {
     compile files('libs/volley.jar')
     compile project(":circularImageView")
     compile 'com.joanzapata.android:android-iconify:1.0.8'
+    compile 'com.squareup.picasso:picasso:2.4.0'
 }

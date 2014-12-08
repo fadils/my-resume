@@ -1,11 +1,9 @@
-{
-    "feed": [
+[
         {
             "id": 1,
             "name": "Summary of Qualifications",
             "image": "",
-            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.
-            \nExceptional interpersonal skills, good team work and enthusiastic in working with other people. Business-oriented, self-starter, hard working and persistent in getting the job done. Strongly-driven to solve complex problems and gain new experiences.",
+            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration. \\nExceptional interpersonal skills, good team work and enthusiastic in working with other people. Business-oriented, self-starter, hard working and persistent in getting the job done. Strongly-driven to solve complex problems and gain new experiences.",
             "profilePic": "https://raw.githubusercontent.com/fadils/fadils.github.io/master/images/jekyll-logo.png",
             "timeStamp": "Passionate mobile engineer",
             "url": null
@@ -32,14 +30,7 @@
             "id": 3,
             "name": "Technical Proficiency",
             "image": "",
-            "status": "Programming Languages: Java, Android SDK, Ruby on Rails
-                       \nCollaboration: Github, Pivotal Tracker, Agile/Scrum development
-                       \nAPI consumption: REST, GCM, Parse.io, Google Maps, social networking, etc.
-                       \nTesting: JUnit, AssertJ, Robolectric
-                       \nDatabase: PostgreSQL, MySQL, SQLite, and MongoDB
-                       \nCloud Infrastructure: AWS, RackSpace
-                       \nIDE: Android Studio, Eclipse
-                       \nMultiplatform: Phonegap, Trigger.io",
+            "status": "Programming Languages: Java, Android SDK, Ruby on Rails \\nCollaboration: Github, Pivotal Tracker, Agile/Scrum development  \\nAPI consumption: REST, GCM, Parse.io, Google Maps, social networking, etc   \\nTesting: JUnit, AssertJ, Robolectric  \\nDatabase: PostgreSQL, MySQL, SQLite, and MongoDB  \\nCloud Infrastructure: AWS, RackSpace  \\nIDE: Android Studio, Eclipse  \\nMultiplatform: Phonegap, Trigger.io",
             "profilePic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
             "timeStamp": "Quite comfortable with these",
             "url": null
@@ -48,13 +39,9 @@
             "id": 4,
             "name": "Contacts",
             "image": "http://www.quickmeme.com/img/9c/9ce5a4414901fd5d01d0bce6fe700fc33755f96fa2cdecd4fe0934908234c85e.jpg",
-            "status": "Email me at: fsutomo@gmail.com
-            \nCall me at: +62812-844-74-864
-            \nRead my blog at: fadils.github.io
-            \nRead my code at: github.com/fadils",
+            "status": "Email me at: fsutomo@gmail.com \\nCall me at: +62812-844-74-864  \\nRead my blog at: fadils.github.io \\nRead my code at: github.com/fadils",
             "profilePic": "http://www.theinquirer.net/IMG/853/275853/gmail-logo-2013.png",
             "timeStamp": "Reach me!",
             "url": null
         }
-    ]
-}
+]

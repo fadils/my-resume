@@ -1,60 +1,47 @@
-{
-    "feed": [
+[
         {
             "id": 1,
-            "name": "Summary of Qualifications",
+            "section": "Summary of Qualifications",
             "image": "",
-            "status": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration.
-            \nExceptional interpersonal skills, good team work and enthusiastic in working with other people. Business-oriented, self-starter, hard working and persistent in getting the job done. Strongly-driven to solve complex problems and gain new experiences.",
-            "profilePic": "https://raw.githubusercontent.com/fadils/fadils.github.io/master/images/jekyll-logo.png",
-            "timeStamp": "Passionate mobile engineer",
+            "content": "Strong understanding in mobile and web application. Enthusiastic in creating beautiful and effective UX. A fan of Agile methodology such as test-driven development and continuous integration. \n \nExceptional interpersonal skills, good team work and enthusiastic in working with other people. Business-oriented, self-starter, hard working and persistent in getting the job done. Strongly-driven to solve complex problems and gain new experiences.",
+            "sectionPic": "https://raw.githubusercontent.com/fadils/fadils.github.io/master/images/jekyll-logo.png",
+            "description": "Passionate mobile engineer",
             "url": null
         },
         {
             "id": 2,
-            "name": "Education",
+            "section": "Education",
             "image": "http://www.consullux.com/files/2013/09/Carleton-Univ-River-Building-01.jpg",
-            "status": "Carleton University, Canada. 2008",
-            "profilePic": "http://upload.wikimedia.org/wikipedia/en/thumb/5/57/Carleton_University_Logo.svg/175px-Carleton_University_Logo.svg.png",
-            "timeStamp": "Bachelor of Computer Science (Honours). Minor in Math",
+            "content": "Carleton University, Canada. 2008",
+            "sectionPic": "http://upload.wikimedia.org/wikipedia/en/thumb/5/57/Carleton_University_Logo.svg/175px-Carleton_University_Logo.svg.png",
+            "description": "Bachelor of Computer Science (Honours). Minor in Math",
             "url": null
         },
         {
             "id": 5,
-            "name": "Awards and Achievements",
+            "section": "Awards and Achievements",
             "image": "",
-            "status": "IBM Best Performer Award - 2009 \nFounder Institute Graduate - 2013",
-            "profilePic": "http://elishatan.com/wp-content/uploads/2011/01/fi-grad.png",
-            "timeStamp": "Somethings I'm proud of",
+            "content": "IBM Best Performer Award - 2009 \n \nFounder Institute Graduate - 2013",
+            "sectionPic": "http://elishatan.com/wp-content/uploads/2011/01/fi-grad.png",
+            "description": "Somethings I'm proud of",
             "url": null
         },
         {
             "id": 3,
-            "name": "Technical Proficiency",
+            "section": "Technical Proficiency",
             "image": "",
-            "status": "Programming Languages: Java, Android SDK, Ruby on Rails
-                       \nCollaboration: Github, Pivotal Tracker, Agile/Scrum development
-                       \nAPI consumption: REST, GCM, Parse.io, Google Maps, social networking, etc.
-                       \nTesting: JUnit, AssertJ, Robolectric
-                       \nDatabase: PostgreSQL, MySQL, SQLite, and MongoDB
-                       \nCloud Infrastructure: AWS, RackSpace
-                       \nIDE: Android Studio, Eclipse
-                       \nMultiplatform: Phonegap, Trigger.io",
-            "profilePic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
-            "timeStamp": "Quite comfortable with these",
+            "content": "Programming Languages: Java, Android SDK, Ruby on Rails \n \nCollaboration: Github, Pivotal Tracker, Agile/Scrum development  \n \nAPI consumption: REST, GCM, Parse.io, Google Maps, social networking, etc   \n \nTesting: JUnit, AssertJ, Robolectric  \n \nDatabase: PostgreSQL, MySQL, SQLite, and MongoDB  \n \nCloud Infrastructure: AWS, RackSpace  \n \nIDE: Android Studio, Eclipse  \n \nMultiplatform: Phonegap, Trigger.io",
+            "sectionPic": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png",
+            "description": "Quite comfortable with these",
             "url": null
         },
         {
             "id": 4,
-            "name": "Contacts",
+            "section": "Contacts",
             "image": "http://www.quickmeme.com/img/9c/9ce5a4414901fd5d01d0bce6fe700fc33755f96fa2cdecd4fe0934908234c85e.jpg",
-            "status": "Email me at: fsutomo@gmail.com
-            \nCall me at: +62812-844-74-864
-            \nRead my blog at: fadils.github.io
-            \nRead my code at: github.com/fadils",
-            "profilePic": "http://www.theinquirer.net/IMG/853/275853/gmail-logo-2013.png",
-            "timeStamp": "Reach me!",
+            "content": "Email me at: fsutomo@gmail.com \n \nCall me at: +62812-844-74-864  \n \nRead my blog at: fadils.github.io \n \nRead my code at: github.com/fadils",
+            "sectionPic": "http://www.theinquirer.net/IMG/853/275853/gmail-logo-2013.png",
+            "description": "Reach me!",
             "url": null
         }
-    ]
-}
+]

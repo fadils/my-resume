@@ -9,24 +9,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import io.github.fadils.myresume.FeedImageView;
 import io.github.fadils.myresume.R;
-import io.github.fadils.myresume.app.AppController;
-import io.github.fadils.myresume.data.FeedItem;
+import io.github.fadils.myresume.model.FeedItem;
 
 public class FeedListAdapter extends BaseAdapter {
+    private static final String TAG = "FeedListAdapter";
+
     private Activity activity;
     private LayoutInflater inflater;
     private List<FeedItem> feedItems;
-
-    ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
     public FeedListAdapter(Activity activity, List<FeedItem> feedItems) {
         this.activity = activity;
@@ -57,9 +55,6 @@ public class FeedListAdapter extends BaseAdapter {
         if (convertView == null)
             convertView = inflater.inflate(R.layout.feed_item, null);
 
-        if (imageLoader == null)
-            imageLoader = AppController.getInstance().getImageLoader();
-
         TextView name = (TextView) convertView.findViewById(R.id.name);
         TextView timestamp = (TextView) convertView
                 .findViewById(R.id.timestamp);
@@ -67,15 +62,15 @@ public class FeedListAdapter extends BaseAdapter {
         TextView statusMsg = (TextView) convertView
                 .findViewById(R.id.txtStatusMsg);
         TextView url = (TextView) convertView.findViewById(R.id.txtUrl);
-        NetworkImageView profilePic = (NetworkImageView) convertView
+        ImageView profilePic = (ImageView) convertView
                 .findViewById(R.id.profilePic);
-        FeedImageView feedImageView = (FeedImageView) convertView
+        ImageView feedImageView = (ImageView) convertView
                 .findViewById(R.id.feedImage1);
 
         FeedItem item = feedItems.get(position);
 
-        name.setText(item.getName());
-        timestamp.setText(item.getTimeStamp());
+        name.setText(item.getSection());
+        timestamp.setText(item.getDescription());
         // Converting timestamp into x ago format
 		/*CharSequence timeAgo = DateUtils.getRelativeTimeSpanString(
 				Long.parseLong(item.getTimeStamp()),
@@ -84,8 +79,8 @@ public class FeedListAdapter extends BaseAdapter {
 	    */
 
         // Chcek for empty status message
-        if (!TextUtils.isEmpty(item.getStatus())) {
-            statusMsg.setText(item.getStatus());
+        if (!TextUtils.isEmpty(item.getContent())) {
+            statusMsg.setText(item.getContent());
             statusMsg.setVisibility(View.VISIBLE);
         } else {
             // status is empty, remove from view
@@ -106,22 +101,11 @@ public class FeedListAdapter extends BaseAdapter {
         }
 
         // user profile pic
-        profilePic.setImageUrl(item.getProfilePic(), imageLoader);
+        Picasso.with(activity).load(item.getSectionPic()).into(profilePic);
 
-        // Feed image
-        if (item.getImge() != null) {
-            feedImageView.setImageUrl(item.getImge(), imageLoader);
+        if (!item.getImage().isEmpty()) {
+            Picasso.with(activity).load(item.getImage()).into(feedImageView);
             feedImageView.setVisibility(View.VISIBLE);
-            feedImageView
-                    .setResponseObserver(new FeedImageView.ResponseObserver() {
-                        @Override
-                        public void onError() {
-                        }
-
-                        @Override
-                        public void onSuccess() {
-                        }
-                    });
         } else {
             feedImageView.setVisibility(View.GONE);
         }

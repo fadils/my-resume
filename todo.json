@@ -1,0 +1,14 @@
+[
+        {
+            "id": 1,
+            "content": "Email customers new features",
+            "priority": 1,
+            "deadline": "Lunch time"
+        },
+        {
+            "id": 2,
+            "content": "Create weekly report",
+            "priority": 3,
+            "deadline": "Before midnight"
+        }
+]
